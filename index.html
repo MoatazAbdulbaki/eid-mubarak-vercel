@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EID MUBARAK</title>
+    <style>
+      body {
+        background-color: #000;
+      }
+      .display-none {
+        display: none;
+      }
+      #transition-page {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: black;
+        z-index: 9999;
+      }
+
+      .flashing-effect {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        border-radius: 50%;
+        width: 0px;
+        height: 0px;
+        box-shadow: 0 0 500px 300px rgb(212, 212, 212);
+        animation: flashing 0.5s linear infinite;
+        animation: scalingAnimation 1.5s linear infinite;
+      }
+
+      @keyframes flashing {
+        0% {
+          opacity: 0;
+        }
+        50% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      @keyframes scalingAnimation {
+        0% {
+          box-shadow: 0 0 0px 50px #5903ca;
+        }
+        50% {
+          box-shadow: 0 0 200px 150px #471786;
+        }
+        100% {
+          box-shadow: 0 0 500px 700px #260c47;
+        }
+      }
+
+      @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+      .more-pens {
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        z-index: 10;
+        font-family: "Montserrat";
+        font-size: 12px;
+      }
+
+      a.white-mode,
+      a.white-mode:link,
+      a.white-mode:visited,
+      a.white-mode:active {
+        font-family: "Montserrat";
+        font-size: 12px;
+        text-decoration: none;
+        background: #212121;
+        padding: 4px 8px;
+        color: #f7f7f7;
+      }
+      a.white-mode:hover,
+      a.white-mode:link:hover,
+      a.white-mode:visited:hover,
+      a.white-mode:active:hover {
+        background: #edf3f8;
+        color: #212121;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: #000000;
+      }
+      @import url("https://fonts.googleapis.com/css?family=Montserrat:200,300,400,600");
+      .more-pens {
+        position: fixed;
+        left: 20px;
+        bottom: 20px;
+        z-index: 10;
+        font-family: "Montserrat";
+        font-size: 12px;
+      }
+
+      a.white-mode,
+      a.white-mode:link,
+      a.white-mode:visited,
+      a.white-mode:active {
+        font-family: "Montserrat";
+        font-size: 12px;
+        text-decoration: none;
+        background: #212121;
+        padding: 4px 8px;
+        color: #f7f7f7;
+      }
+      a.white-mode:hover,
+      a.white-mode:link:hover,
+      a.white-mode:visited:hover,
+      a.white-mode:active:hover {
+        background: #edf3f8;
+        color: #212121;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        width: 100%;
+        height: 100%;
+        background: #000000;
+      }
+
+      .title {
+        z-index: 10;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translateX(-50%) translateY(-50%);
+        font-family: "Montserrat";
+        text-align: center;
+        width: 100%;
+        height: fit-content;
+      }
+
+      .wrapper {
+        width: fit-content;
+        margin: 1em auto;
+        text-align: center;
+      }
+      .wrapper span {
+        font-size: 8em;
+        font-weight: bold;
+        color: #4b4b4b;
+        animation: lighting 1300ms alternate infinite ease;
+      }
+      @keyframes lighting {
+        0%,
+        85% {
+          color: #4b4b4b;
+          text-shadow: none;
+        }
+        100% {
+          color: #fff200;
+          text-shadow: 0 0 5px #fff200, 0 0 3px #ff9f1a;
+        }
+      }
+      .wrapper span.margin {
+        margin-left: 20px;
+      }
+      .wrapper span:nth-child(1) {
+        animation-delay: 150ms;
+      }
+      .wrapper span:nth-child(2) {
+        animation-delay: 300ms;
+      }
+      .wrapper span:nth-child(3) {
+        animation-delay: 450ms;
+      }
+      .wrapper span:nth-child(4) {
+        animation-delay: 600ms;
+      }
+      .wrapper span:nth-child(5) {
+        animation-delay: 750ms;
+      }
+      .wrapper span:nth-child(6) {
+        animation-delay: 900ms;
+      }
+      .wrapper span:nth-child(7) {
+        animation-delay: 1050ms;
+      }
+      .wrapper span:nth-child(8) {
+        animation-delay: 1200ms;
+      }
+      .wrapper span:nth-child(9) {
+        animation-delay: 1350ms;
+      }
+      .wrapper span:nth-child(10) {
+        animation-delay: 1500ms;
+      }
+      .wrapper span:nth-child(11) {
+        animation-delay: 1550ms;
+      }
+      .wrapper span:nth-child(12) {
+        animation-delay: 1800ms;
+      }
+      .wrapper span:nth-child(13) {
+        animation-delay: 1950ms;
+      }
+      .wrapper span:nth-child(14) {
+        animation-delay: 2100ms;
+      }
+      .wrapper span:nth-child(15) {
+        animation-delay: 2250ms;
+      }
+      .wrapper span:nth-child(16) {
+        animation-delay: 2500ms;
+      }
+      .wrapper span:nth-child(17) {
+        animation-delay: 2650ms;
+      }
+      .wrapper span:nth-child(18) {
+        animation-delay: 2800ms;
+      }
+      .wrapper span:nth-child(19) {
+        animation-delay: 1500ms;
+      }
+      .wrapper span:nth-child(20) {
+        animation-delay: 1500ms;
+      }
+
+      .brasil {
+        font-family: arial;
+        position: relative;
+        color: #fff;
+        text-align: center;
+        font-size: 4rem;
+        max-width: fit-content;
+        margin: 0 auto;
+      }
+      .brasil::before,
+      .brasil::after {
+        content: attr(data-text);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+      }
+
+      .brasil::before {
+        left: 2px;
+        clip: rect(79px, 1200px, 86px, 0);
+        text-shadow: -1px 0 red;
+        background: #000;
+        animation: brasil-anim-2 1s infinite linear alternate-reverse;
+      }
+
+      .brasil::after {
+        /* variation */
+        left: -2px;
+        clip: rect(79px, 1200px, 86px, 0);
+        text-shadow: -1px 0 blue;
+        background: #000;
+        animation: brasil-anim-1 1s infinite linear alternate-reverse;
+        animation-delay: -1s;
+      }
+
+      @keyframes brasil-anim-1 {
+        0% {
+          clip: rect(20px, 1200px, 76px, 0);
+        }
+        20% {
+          clip: rect(19px, 1200px, 16px, 0);
+        }
+        40% {
+          clip: rect(16px, 1200px, 3px, 0);
+        }
+        60% {
+          clip: rect(62px, 1200px, 78px, 0);
+        }
+        80% {
+          clip: rect(25px, 1200px, 13px, 0);
+        }
+        100% {
+          clip: rect(53px, 1200px, 86px, 0);
+        }
+      }
+
+      @keyframes brasil-anim-2 {
+        0% {
+          clip: rect(79px, 1200px, 86px, 0);
+        }
+
+        20% {
+          clip: rect(20px, 1200px, 30px, 0);
+        }
+
+        40% {
+          clip: rect(25px, 1200px, 5px, 0);
+        }
+
+        60% {
+          clip: rect(65px, 1200px, 85px, 0);
+        }
+
+        80% {
+          clip: rect(120px, 1200px, 145px, 0);
+        }
+
+        100% {
+          clip: rect(95px, 1200px, 75px, 0);
+        }
+      }
+
+      p.from {
+        font-family: Arial, Helvetica, sans-serif;
+        margin: 20px auto;
+        width: 0;
+        color: #ddd;
+        font-weight: bold;
+        font-size: 20px;
+        position: fixed;
+        bottom: -50px;
+        left: 50%;
+        transform: translateX(-50%);
+        white-space: nowrap;
+        animation: anime 2s 2.5s steps(30) both;
+        overflow: hidden;
+      }
+      @keyframes anime {
+        0% {
+          width: 0;
+        }
+        100% {
+          width: 250px;
+        }
+      }
+    </style>
+    <script src="/main.js" defer></script>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+  </head>
+  <body>
+    <script>
+      const toDeg = 180 / Math.PI;
+      const toRad = Math.PI / 180;
+      const halfPI = Math.PI / 2;
+      const twoPI = Math.PI * 2;
+      const pointAngle = (x1, y1, x2, y2) => Math.atan2(y2 - y1, x2 - x1);
+      const pointAngle3d = (p1, p2) => ({
+        x: pointAngle(p1.z, p1.y, p2.z, p2.y),
+        y: pointAngle(p1.x, p1.z, p2.x, p2.z),
+      });
+      const getPathOffset = (pos) => {
+        const period = 0.04;
+        const amplitude = 12;
+        return {
+          x: Math.sin(pos * period) * amplitude,
+          y: Math.cos(pos * period) * amplitude,
+        };
+      };
+      const createGradientSampler = (start, end) => {
+        const components = ["h", "s", "l"];
+        return (pos) => {
+          const result = {};
+          components.forEach((c) => {
+            const s = start[c];
+            const e = end[c];
+            result[c] = (e - s) * pos + s;
+          });
+          return `hsl(${result.h},${result.s}%,${result.l}%)`;
+        };
+      };
+    </script>
+    <script>
+      AFRAME.registerComponent("tunnel", {
+        schema: {
+          radius: { type: "number", default: 3.8 },
+          ringSpace: { type: "number", default: 2 },
+          ringBoxes: { type: "int", default: 12 },
+          startHue: { type: "int", default: 0 },
+          endHue: { type: "int", default: 0 },
+        },
+        init: function () {
+          this.position = 0;
+          this.lastRemovedPosition = 0;
+          this.ringIndex = 0;
+          this.speed = 10;
+          const interval = window.setInterval(() => {
+            this.speed += 20;
+            if (this.speed > 100) {
+              window.clearInterval(interval);
+            }
+          }, 1500);
+          this.cameraWrapEl = document.querySelector(".camera-wrap");
+          this.gradLength = 80;
+          const startHue1 = 125;
+          const startHue2 = 0;
+          const endHue1 = 270;
+          const endHue2 = 100;
+          this.colorSamplers = [];
+          for (let i = 0; i < this.gradLength; i++) {
+            const pos = i / this.gradLength;
+            const startHue = (startHue2 - startHue1) * pos + startHue1;
+            const endHue = (endHue2 - endHue1) * pos + endHue1;
+            const startColor = { h: startHue, s: 100, l: 68 };
+            const endColor = { h: endHue, s: 100, l: 68 };
+            this.colorSamplers.push(
+              createGradientSampler(startColor, endColor)
+            );
+          }
+        },
+        update: function () {
+          if (this.boxes) {
+            this.boxes.forEach((ring) => ring.forEach((box) => box.remove()));
+          }
+          this.boxes = [];
+          const rings = 50;
+          this.position = (rings * this.data.ringSpace) / 2;
+          for (let i = 0; i < rings; i++) {
+            this.appendRing(true);
+          }
+        },
+        tick: function (time, timeDelta) {
+          timeDelta = Math.min(timeDelta, 100);
+          const positionDelta = (timeDelta / 1000) * this.speed;
+          this.position += positionDelta;
+          const offset = getPathOffset(this.position);
+          this.el.setAttribute("position", {
+            x: -offset.x,
+            y: -offset.y,
+            z: this.position,
+          });
+          const positionAhead = this.position + 16;
+          const offsetAhead = getPathOffset(positionAhead);
+          const p1 = { x: offset.x, y: offset.y, z: this.position };
+          const p2 = { x: offsetAhead.x, y: offsetAhead.y, z: positionAhead };
+          const angle = pointAngle3d(p1, p2);
+          angle.x = angle.x * toDeg;
+          angle.y = angle.y * toDeg - 90;
+          this.cameraWrapEl.setAttribute("rotation", angle);
+          this.lastRemovedPosition += positionDelta;
+          while (this.lastRemovedPosition >= this.data.ringSpace) {
+            this.lastRemovedPosition -= this.data.ringSpace;
+            this.appendRing();
+          }
+        },
+        appendRing: function (isNew) {
+          const ringPos = this.ringIndex * this.data.ringSpace;
+          const ringOffset = getPathOffset(ringPos);
+          const ring = isNew ? [] : this.boxes.shift();
+          for (let i = 0; i < this.data.ringBoxes; i++) {
+            const angleOffset = this.ringIndex * 14;
+            const currentAngle = (360 / this.data.ringBoxes) * i + angleOffset;
+            const currentAngleRad = currentAngle * toRad;
+            const x =
+              Math.sin(currentAngleRad) * this.data.radius + ringOffset.x;
+            const y =
+              Math.cos(currentAngleRad) * this.data.radius + ringOffset.y;
+            const box = isNew ? document.createElement("a-box") : ring[i];
+            const colorSamplerIndex = Math.abs(
+              (this.ringIndex % (this.gradLength * 2 - 1)) - this.gradLength + 1
+            );
+            const colorSampler = this.colorSamplers[colorSamplerIndex];
+            const colorPos = Math.abs((currentAngle - angleOffset) / 180 - 1);
+            box.setAttribute("color", colorSampler(colorPos));
+            box.setAttribute("position", { x, y, z: -ringPos });
+            box.setAttribute("rotation", { x: 45, y: 45, z: -currentAngle });
+            if (isNew) {
+              this.el.appendChild(box);
+              ring.push(box);
+            }
+          }
+          this.boxes.push(ring);
+          this.ringIndex++;
+        },
+      });
+    </script>
+
+    <div id="fxt-scene">
+      <a-scene>
+        <a-sky color="#000"></a-sky>
+        <a-entity class="camera-wrap">
+          <a-camera position="0 -1 0"></a-camera>
+        </a-entity>
+        <a-light type="point" intensity="1" distance="50" decay="1"></a-light>
+        <a-entity tunnel="startHue: 115; endHue: 240;"> </a-entity>
+      </a-scene>
+    </div>
+    <div id="transition-page" class="display-none">
+      <div class="flashing-effect"></div>
+    </div>
+
+    <div class="title display-none" id="title-container">
+      <div class="brasil" data-text="EID MUBARAK">EID MUBARAK</div>
+      <div class="wrapper" id="name_wrapper"></div>
+      <p class="from">From : Moataz Abdulbaqi</p>
+    </div>
+
+    <script>
+      window.setTimeout(() => {
+        let max_particles = 10000;
+
+        var tela = document.createElement("canvas");
+        tela.width = $(window).width();
+        tela.height = $(window).height();
+        $("body").append(tela);
+
+        var canvas = tela.getContext("2d");
+
+        class Particle {
+          constructor(canvas, progress) {
+            let random = Math.random();
+            this.progress = 0;
+            this.canvas = canvas;
+
+            this.x =
+              $(window).width() / 2 +
+              (Math.random() * 200 - Math.random() * 200);
+            this.y =
+              $(window).height() / 2 +
+              (Math.random() * 200 - Math.random() * 200);
+            this.s = Math.random() * 1;
+            this.a = 0;
+            this.w = $(window).width();
+            this.h = $(window).height();
+            this.radius = random > 0.2 ? Math.random() * 1 : Math.random() * 3;
+            this.color = random > 0.2 ? "#2E4765" : "#b5ff00";
+            this.radius = random > 0.8 ? Math.random() * 2 : this.radius;
+            this.color = random > 0.8 ? "#2E4765" : this.color;
+
+            // this.color  = random > .1 ? "#ffae00" : "#f0ff00" // Alien
+            this.variantx1 = Math.random() * 300;
+            this.variantx2 = Math.random() * 400;
+            this.varianty1 = Math.random() * 100;
+            this.varianty2 = Math.random() * 120;
+          }
+
+          render() {
+            this.canvas.beginPath();
+            this.canvas.arc(this.x, this.y, this.radius, 0, 2 * Math.PI);
+            this.canvas.lineWidth = 2;
+            this.canvas.fillStyle = this.color;
+            this.canvas.fill();
+            this.canvas.closePath();
+          }
+
+          move() {
+            this.x += Math.cos(this.a) * this.s;
+            this.y += Math.sin(this.a) * this.s;
+            this.a += Math.random() * 0.8 - 0.4;
+
+            if (this.x < 0 || this.x > this.w - this.radius) {
+              return false;
+            }
+
+            if (this.y < 0 || this.y > this.h - this.radius) {
+              return false;
+            }
+            this.render();
+            this.progress++;
+            return true;
+          }
+        }
+
+        let particles = [];
+        let init_num = popolate(max_particles);
+        function popolate(num) {
+          for (var i = 0; i < num; i++) {
+            setTimeout(
+              function () {
+                particles.push(new Particle(canvas, i));
+              }.bind(this),
+              i * 20
+            );
+          }
+          return particles.length;
+        }
+
+        function clear() {
+          canvas.globalAlpha = 0.05;
+          canvas.fillStyle = "#000155";
+          canvas.fillStyle = "#000021"; // Alien
+          canvas.fillRect(0, 0, tela.width, tela.height);
+          canvas.globalAlpha = 1;
+        }
+
+        function update() {
+          particles = particles.filter(function (p) {
+            return p.move();
+          });
+          if (particles.length < init_num) {
+            popolate(1);
+          }
+          clear();
+          requestAnimationFrame(update.bind(this));
+        }
+        update();
+      }, 9500);
+    </script>
+    <script defer>
+      const fxtScene = document.querySelector("#fxt-scene");
+      const flashingPage = document.querySelector("#transition-page");
+      const titleContainer = document.querySelector("#title-container");
+
+      window.setTimeout(() => {
+        fxtScene.classList.add("display-none");
+        flashingPage.classList.remove("display-none");
+        window.setTimeout(() => {
+          flashingPage.classList.add("display-none");
+          titleContainer.classList.remove("display-none");
+        }, 1500);
+      }, 8000);
+    </script>
+    <script defer>
+      const nameWrapper = document.querySelector("#name_wrapper");
+      const urlParams = new URLSearchParams(window.location.search);
+      const originName = urlParams.get("name");
+
+      const name = originName.toUpperCase().split("");
+      name.forEach((char) => {
+        const newSpan = document.createElement("span");
+        if (char !== "_") {
+          newSpan.textContent = char;
+        } else {
+          newSpan.classList.add("margin");
+        }
+        nameWrapper.appendChild(newSpan);
+      });
+    </script>
+  </body>
+</html>
